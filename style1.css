@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    height: 100px;
+    background-color: black;
+    overflow: hidden;
+}
+.moon{
+    position: absolute;
+    top: 80px;
+    left: 70%;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle at 30% 30%, #e5501e, #e8641c 70%);
+    border-radius: 50%;
+    box-shadow: 0 0 40px 15px rgba(242, 53, 15, 0.5);
+    animation-name: shadow-ani;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes shadow-ani{
+    from{box-shadow:0 0 15px 9px rgb(241, 241, 241);}
+      to{box-shadow: 0 0 60px 25px rgb(251, 252, 251);}
+}

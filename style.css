@@ -1,0 +1,158 @@
+.main-header
+{
+    text-align: center;
+    color: brown;
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    width:100;  
+    box-sizing: border-box;
+}
+.main-header.logo
+{
+    width: 55px;
+    height: 55px;
+    padding: 8px 14px;
+    margin: 10 px 0;
+}
+.main-header.logo img
+{
+    border-radius: 5px;
+}
+
+.main-header title
+{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+h1
+{
+    color: aqua;
+}
+.bgimage
+{
+    background-image: url("../images/bg2.jpg");
+    background-position: center;
+    text-align: center;
+}
+.maincomponent
+{
+    display: flex;
+    border: 2px solid black;
+}
+.box
+{
+    width:200px;
+    height: 200px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2em;
+    transition: width 2s, height 2s, transform 3s;
+    transition-delay: 2s; 
+}
+#box1
+{
+     background-color: aqua; 
+     transition-timing-function: linear; 
+}
+#box2
+{
+     background-color: rgb(255, 21, 0); 
+     transition-timing-function: ease-out ; 
+}
+#box3
+{
+     background-color: azure; 
+     transition-timing-function:ease-in-out; 
+}
+
+
+#box4
+{
+    background-color: brown; 
+     transition: 2s; 
+     transition-timing-function: ease-in; 
+}
+.newrotate
+{
+  width: 150px; 
+  height: 150px;
+  border-radius: 15px; 
+  background-color: greenyellow;
+  transition: width 2s, height 2s, transform 2s;
+}
+#newrotate:hover
+{
+    width: 250;
+    height: 250px;
+    transform: rotate(180deg)
+}
+.animi
+{
+    width: 160px;
+    height: 160px;
+    animation-name: animid;
+    animation-duration: 2s;
+}
+@keyframes animid{
+from{background-color: rgb(43, 195, 226);}
+to{background-color: blue;}
+}
+.animi
+{
+    width: 160px;
+    height: 160px;
+    background-color: royalblue;
+    animation-name: animid;
+    animation-duration: 6s;
+}
+
+   .scrolltext{
+
+   font-family: 'Lucida Sans';
+   font-style: oblique;
+   font-size: 25px;
+   width: 100%;
+   white-space: nowrap;
+   color: rgb(255, 21, 0);
+   overflow: hidden;
+   box-sizing: border-box;
+}
+@keyframes scroll-left{
+    from{ transform: translateX(100%); }
+    to{ transform: translateX(-100%); }
+}
+
+.scrolltext span{
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-left 10s linear infinite;
+} 
+   .scrolltext{
+
+   font-family: 'Lucida Sans';
+   font-style: oblique;
+   font-size: 25px;
+   width: 100%;
+   white-space: nowrap;
+   color: rgb(255, 21, 0);
+   overflow: hidden;
+   box-sizing: border-box;
+   }
+@keyframes scroll-right{
+    from{transform:translateX(100%);}
+    to{transform: translateX(-100%);}
+
+}
+.scrollright span{
+    display:inline-block;
+    padding-right: 100%;
+    animation: scroll-right 10s linear infinite;
+    animation-duration: 10s;
+}    
+
+
